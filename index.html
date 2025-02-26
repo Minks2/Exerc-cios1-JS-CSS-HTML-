@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Let's go</h1>
+
+        <nav>
+            <ul>
+                <li><a href="#manipulacao-elementos">Manipulação de Elementos</a></li>
+                <li><a href="#inserir-remover-elementos">Inserir e Remover Elementos</a></li>
+                <li><a href="#consumir-api-get">Consumir API (GET)</a></li>
+                <li><a href="#enviar-dados-api-post">Enviar Dados para API (POST)</a></li>
+                <li><a href="#exibir-dados-tabela">Exibir Dados em Tabela</a></li>
+                <li><a href="#manipulacao-json">Manipulação do JSON Recebido</a></li>
+                <li><a href="#crud-simulado">CRUD Simulado</a></li>
+                <li><a href="#validacao-formularios">Validação de Formulários</a></li>
+                <li><a href="integracao.html" class="btn-destaque">Ir para Integração Completa</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="manipulacao-elementos">
+            <h2>Manipulação de Elementos</h2>
+            <button id="mudar-cor">Mudar Cor</button>
+            <p id="texto-exemplo">Este texto mudará de cor ao clicar no botão.</p>
+        </section>
+
+        <section id="inserir-remover-elementos">
+            <h2>Inserir e Remover Elementos</h2>
+            <input type="text" id="novo-item" placeholder="Digite um item">
+            <button id="adicionar-item">Adicionar Item</button>
+            <ul id="lista-itens"></ul>
+        </section>
+
+        <section id="consumir-api-get">
+            <h2>Consumir API (GET)</h2>
+            <button id="buscar-dados">Buscar Dados</button>
+            <div id="resultado-api"></div>
+        </section>
+
+        <section id="enviar-dados-api-post">
+            <h2>Enviar Dados para API (POST)</h2>
+            <form id="formulario-post">
+                <input type="text" id="nome" placeholder="Nome" required>
+                <input type="email" id="email" placeholder="E-mail" required>
+                <button type="submit">Enviar</button>
+            </form>
+            <div id="resposta-post"></div>
+        </section>
+
+        <section id="exibir-dados-tabela">
+            <h2>Exibir Dados em Tabela / Manipulação do JSON Recebido</h2>
+            <button id="buscar-dados-tabela">Buscar Dados para Tabela</button>
+            <button id="aplicar-filtro">Filtrar Dados (RM's que começam com 5)</button>
+            <button id="resetar-filtro">Resetar Filtro</button>
+            <table id="tabela-dados">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>RM</th>
+                        <th>Turma</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Adicionar Aluno</h2>
+            <form id="form-adicionar">
+                <input type="text" id="nome-aluno" placeholder="Nome" required>
+                <input type="number" id="rm" placeholder="RM" required>
+                <input type="text" id="turma" placeholder="Turma" required>
+                <button type="submit">Adicionar</button>
+            </form>
+
+            <h2>Lista de Alunos (CRUD)</h2>
+            <table id="tabela-crud">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>RM</th>
+                        <th>Turma</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                 
+                </tbody>
+            </table>
+        </section>
+
+        <section id="validacao-formularios">
+            <h2>Validação de Formulários</h2>
+            <form id="formulario-validacao">
+                <input type="text" id="nome-validacao" placeholder="Nome" required>
+                <span id="erro-nome" class="erro"></span>
+                <input type="email" id="email-validacao" placeholder="E-mail" required>
+                <span id="erro-email" class="erro"></span>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>God is good!</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
